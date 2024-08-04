@@ -1,11 +1,27 @@
 <?php
 
+// STRING
+
  // $name = "Olivier";
- 
+  define('NAME', 'Olivier');
   $age = 32;
 
-  // $name = "Kango";
+  $stringOne = 'my email is ';
+  $stringTwo = 'olivierkango@gmail.com';
 
+  $name = "mario";
+
+  // echo 'Hey, my name is ' . $name;
+  // echo "Hey, my name is $name"
+
+  // echo 'The Ninja say "Haaaaa"';
+  // echo "The Ninja say \"Haaaaa\"";
+  // echo $stringTwo[12];
+
+  // echo strlen($stringTwo);
+  // echo strtoupper($name);
+  // echo strtolower('KANGO');
+  echo str_replace('m', 'w', $name);
 ?>
 
 <!DOCTYPE html>
@@ -16,10 +32,6 @@
   <title>my first PHP file</title>
 </head>
 <body>
-  <h1><?php echo 'hello, ninjas'; ?></h1>
-  <div>
-    <?php echo $name; ?>
-    <?php echo $age; ?>
-  </div>
+  <h1><?php echo $stringOne.$stringTwo ?></h1>
 </body>
 </html>
